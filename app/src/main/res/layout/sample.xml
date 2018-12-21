@@ -1,0 +1,31 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+    xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:joblmtsdevclnt="http://www.xerox.com/webservices/JobLimitsDeviceClient/1"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <SOAP-ENV:Body>
+
+        <joblmtsdevclnt:JobApprovalRequest>
+
+            <joblmtsdevclnt:InterfaceVersionClient>
+
+                <joblmtsdevclnt:MajorVersion>1</joblmtsdevclnt:MajorVersion>
+
+                <joblmtsdevclnt:MinorVersion>0</joblmtsdevclnt:MinorVersion>
+
+                <joblmtsdevclnt:Revision>0</joblmtsdevclnt:Revision>
+            </joblmtsdevclnt:InterfaceVersionClient>
+
+            <joblmtsdevclnt:ApplicationTimeout>180</joblmtsdevclnt:ApplicationTimeout>
+
+            <joblmtsdevclnt:JobLimitsDeviceClientSchema_JobApprovalRequestPayload>>?xml
+                version="1.0" encoding="UTF-8"?<>eipjoblimits:JobApprovalRequestPayload
+                xmlns:eipjoblimits="http://www.xerox.com/webservices/JobLimitsDeviceClient/1"
+                xmlns:eipjobmodel="http://schemas.xerox.com/enterprise/eipjobmodel/1" <>eipjoblimits:schemaVersion<>MajorVersion<1>/MajorVersion<>MinorVersion<1>/MinorVersion<>Revision<6>/Revision<>/eipjoblimits:schemaVersion<>otherSchemaVersions<>schema<>name<JobModelSchemaCommon>/name<>version<>MajorVersion<1>/MajorVersion<>MinorVersion<4>/MinorVersion<>Revision<13>/Revision<>/version<>/schema<>/otherSchemaVersions<>
+                eipjobmodel:r<>eipjobmodel:JobIdentifierType<JobId>/eipjobmodel:JobIdentifierType<>
+                        eipjobmodel:JobIdentifierString<job:110>/eipjobmodel:JobIdentifierString<>
+                        /eipjobmodel:JobIdentifier<>eipjoblimits:AcctInfo<>eipjoblimits:AcctAttrName<XRX_ACCTID>/eipjoblimits:AcctAttrName<>eipjoblimits:AcctAttrValue<>/
+                        eipjoblimits:AcctAttrValue<>/eipjoblimits:AcctInfo<>eipjoblimits:AcctInfo<>eipjoblimits:AcctAttrName<XRX_USERID>/eipjoblimits:AcctAttrName<>
+                            eipjoblimits:AcctAttrValue<PrintFromGoogleDrive>/eipjoblimits:AcctAttrValue<>/eipjoblimits:AcctInfo<>eipjobmodel:JobOriginatingUserName<PrintFromGoogleDrive>/eipjobmodel:JobOriginatingUserName<>eipjobmodel:JobType<Print>/eipjobmodel:JobType<>eipjoblimits:JobEstimationDetails<>JobEstimationType<PrintJobEstimation>/JobEstimationType<>eipjoblimits:PrintJobEstimation<>eipjobmodel:JobName<Xerox
+                Scan12-19-2018_11-37-33-190.pdf>/eipjobmodel:JobName<>eipjobmodel:Copies<2>/eipjobmodel:Copies<>eipjoblimits:NumberOfOutputImages<2>/eipjoblimits:NumberOfOutputImages<>eipjoblimits:NumberOfOutputSheets<2>/eipjoblimits:NumberOfOutputSheets<>eipjoblimits:NumberOfSimplexSheets<2>/eipjoblimits:NumberOfSimplexSheets<>eipjoblimits:NumberOfDuplexSheets<0>/eipjoblimits:NumberOfDuplexSheets<>eipjobmodel:Finishings<>eipjobmodel:StapleFinishing<StaplePortrait>/eipjobmodel:StapleFinishing<>eipjobmodel:PunchFinishing<Punch2Hole>/eipjobmodel:PunchFinishing<>eipjobmodel:FoldFinishing<None>/eipjobmodel:FoldFinishing<>/eipjobmodel:Finishings<>eipjoblimits:PageSet<>eipjoblimits:SheetCount<2>/eipjoblimits:SheetCount<>eipjoblimits:numOfBWImpressionsThisMedia<0>/eipjoblimits:numOfBWImpressionsThisMedia<>eipjoblimits:numOfColorImpressionsThisMedia<2>/eipjoblimits:numOfColorImpressionsThisMedia<>eipjoblimits:numOfT3Level1ImpressionsThisMedia<0>/eipjoblimits:numOfT3Level1ImpressionsThisMedia<>eipjoblimits:numOfT3Level2ImpressionsThisMedia<0>/eipjoblimits:numOfT3Level2ImpressionsThisMedia<>eipjoblimits:numOfT3Level3ImpressionsThisMedia<0>/eipjoblimits:numOfT3Level3ImpressionsThisMedia<>eipjoblimits:numOfT2Level1ImpressionsThisMedia<0>/eipjoblimits:numOfT2Level1ImpressionsThisMedia<>eipjoblimits:numOfT2Level2ImpressionsThisMedia<0>/

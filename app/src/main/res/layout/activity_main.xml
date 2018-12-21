@@ -43,7 +43,7 @@
             android:gravity="center"
             android:paddingTop="20dp"
             android:layout_gravity="center"
-            android:text="@={bindingData.firstName}" />
+            android:text="@{bindingData.firstName,default = firstName}" />
 
         <TextView
             android:id="@+id/textLast"
@@ -51,6 +51,6 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@={bindingData.lastName}" />
+            android:text="@{bindingData.lastName, default = lastName}" />
     </LinearLayout>
 </layout>

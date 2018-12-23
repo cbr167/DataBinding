@@ -1,56 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<data>
 
-    <variable
-        name="bindingData"
-        type="converter.xerox.com.myapplication.Data"/>
-</data>
+    <data>
+
+        <variable
+            name="bindingData"
+            type="converter.xerox.com.myapplication.model.Data" />
+
+        <variable
+            name="buttonClick"
+            type="converter.xerox.com.myapplication.commands.ButtonClick" />
+
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <EditText
             android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="enter first name"
-
-            android:text="@={bindingData.firstName}"/>
+            android:hint="@{bindingData.fNameHint}"
+            android:text="@={bindingData.firstName}" />
 
         <EditText
             android:id="@+id/lastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@={bindingData.lastName}"
-            android:hint="Enter Last Name" />
+            android:hint="@{bindingData.lNameHint}"
+            android:text="@={bindingData.lastName}" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{(view)->bindingData.onLoginButtonClick()}"
+android:onClick="@{(view)->buttonClick.onClick()}"
             android:text="Click to Bind" />
 
         <TextView
             android:id="@+id/textFirst"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_gravity="center"
             android:gravity="center"
             android:paddingTop="20dp"
-            android:layout_gravity="center"
             android:text="@{bindingData.firstName,default = firstName}" />
 
         <TextView
             android:id="@+id/textLast"
-            android:layout_gravity="center"
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:text="@{bindingData.lastName, default = lastName}" />
     </LinearLayout>
 </layout>

@@ -1,14 +1,8 @@
-package converter.xerox.com.myapplication;
+package converter.xerox.com.myapplication.model;
 
 import android.databinding.BaseObservable;
-import android.databinding.ObservableField;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import java.util.Objects;
+import converter.xerox.com.myapplication.BR;
 
 /**
  * Created by q5k66hns on 12/20/2018.
@@ -16,9 +10,17 @@ import java.util.Objects;
 
 public class Data extends BaseObservable {
 
+
     private String firstName;
-    private String abcd = "aaaa";
     private String lastName;
+    public String fNameHint;
+    public String lNameHint;
+
+
+    public Data(String fNameHint, String lNameHint) {
+        this.fNameHint = fNameHint;
+        this.lNameHint = lNameHint;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -27,7 +29,6 @@ public class Data extends BaseObservable {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
         notifyPropertyChanged(BR._all);
-
 
     }
 
@@ -39,11 +40,6 @@ public class Data extends BaseObservable {
     public void setLastName(String lastName) {
         this.lastName = lastName;
         notifyPropertyChanged(BR._all);
-    }
-
-    public void onLoginButtonClick(){
-       notifyPropertyChanged(BR._all);
-
     }
 
 }
